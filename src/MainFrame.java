@@ -22,6 +22,7 @@ public class MainFrame extends JFrame{
     InputPanel birthPanel;
     InputPanel salaryPanel;
     public MainFrame() {
+        this.about();
         this.initComponent();
         this.setComponent();
         this.setFrame();
@@ -63,6 +64,13 @@ public class MainFrame extends JFrame{
     }
     public JButton getNextButton() {
         return nextButton;
+    }
+    public void about(){
+        System.out.println("---------------------------------------");
+        System.out.println("Laczkó Henrietta");
+        System.out.println("Szoft I-I N");
+        System.out.println("2023-05-23");
+        System.out.println("---------------------------------------");
     }
     
 }
