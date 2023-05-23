@@ -1,3 +1,12 @@
+/*
+* File: LoadFile.java
+* Author: Laczkó Henrietta
+* Copyright: 2023, Laczkó Henrietta
+* Group: Szoft I/1/N
+* Date: 2023-05-23
+* Github: https://github.com/LHENI/berkft.git
+* Licenc: GNU GPL
+*/
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
@@ -27,7 +36,7 @@ public class LoadFile {
         // String firstRow = scanner.nextLine();       
         while(scanner.hasNext()) {
             String line = scanner.nextLine();
-            String[] lineArray = line.split("#");
+            String[] lineArray = line.split(":");
             Employee emp = new Employee();
             emp.name = lineArray[0];
             emp.city = lineArray[1];
